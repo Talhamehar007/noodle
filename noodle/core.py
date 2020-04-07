@@ -165,7 +165,7 @@ class Command(Base):
         output(ErrorMsg.wrong_option(self.user_passed_options[0]))
         sys.exit()
 
-    def option(self, option):
+    def option(self, *args):
         """
         Return True/False if the option valid. To be used with self.handler():
         """
@@ -173,7 +173,7 @@ class Command(Base):
         # self.user_passed_options. Option can be short (self.user_options[0].short_flag)
         # or long (self.user_options[0].long_flag)
         for opt in self.user_options:
-            if opt.name == option:
+            if opt.name in args:
                 if opt.short_flag in self.user_passed_options:
                     return True
                 elif opt.long_flag in self.user_passed_options:

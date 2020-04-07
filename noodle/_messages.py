@@ -41,8 +41,3 @@ class DescriptionMsg:
             return f"Command '{command_name}' has no description yet{os.linesep}"
 
         return f"{orange('No description yet')}{os.linesep}"
-
-
-class CustomError(Exception):
-    """Base class for other exceptions"""
-    pass

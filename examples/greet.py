@@ -33,13 +33,13 @@ class Greet(noodle.Command):
         if self.option("yell") and self.option("shh"):
             text += " Yelled and Shhed"
 
-        if self.option("yell"):
+        elif self.option("yell"):
             text = text.upper()
 
-        if self.option("shh"):
+        elif self.option("shh"):
             text = text.lower()
 
-        if self.option("age"):
+        elif self.option("age"):
             age = noodle.ask.integer("What is your age? ")
             text += f" , tienes {age}"
 

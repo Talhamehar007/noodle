@@ -14,10 +14,6 @@
 - All options printing in the Command help when no user arguments are defined.
 - Wrong Command formatting.
 
-### Changed
-
-- Command options are now defined in the `command_options method`.
-
 ## [v0.0.2](https://github.com/wilfredinni/noodle/releases/tag/0.0.2) - 2019-05-15
 
 Initial release.
